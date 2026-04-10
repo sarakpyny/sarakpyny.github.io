@@ -1,17 +1,93 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Sarakpy NY">
+  <section class="hero">
+    <div>
+      <p class="muted">Data Science, Statistics, and Machine Learning Student at ENSAE Paris</p>
+
+      <h1>
+        Data Science, Statistics, and Machine Learning student interested in
+        Scientific Machine Learning, AI, and Deep Learning
+      </h1>
+
+      <p>
+        I am a student at ENSAE Paris with experience across applied and research-oriented
+        machine learning projects, from recommendation systems and NLP to fairness in machine learning
+        and scientific machine learning.
+      </p>
+
+      <p>
+        I am especially interested in scientific machine learning, AI, and deep learning, and I am
+        building toward PhD opportunities while developing strong technical and analytical foundations.
+      </p>
+
+      <div class="button-group">
+        <a class="button primary" href="/projects">View Projects</a>
+        <a class="button" href="/cv">View CV</a>
+        <a class="button" href="/contact">Contact</a>
+      </div>
+
+      <p class="muted" style="margin-top: 1rem;">
+        <a href="https://github.com/sarakpyny" target="_blank">GitHub</a>
+        ·
+        <a href="https://linkedin.com/in/sarakpyny" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <div>
+      <img
+        src="/images/ny-profile.jpg"
+        alt="Portrait of Sarakpy NY"
+        style="width: 100%; max-width: 320px; border-radius: 18px; border: 1px solid #d1d5db; margin: 0 auto;"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Research Interests</h2>
+    <p>
+      My interests include scientific machine learning, deep learning, statistical learning,
+      trustworthy AI, sequence modeling, representation learning, and applied machine learning
+      for real-world systems.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Selected Projects</h2>
+
+    <div class="card">
+      <h3>Manifesto ML System Deployment</h3>
+      <p>
+        Built and deployed a reproducible machine learning system with modular training pipelines,
+        experiment tracking, API serving, containerization, CI/CD, and Kubernetes deployment.
+      </p>
+      <p>
+        <a href="https://github.com/sarakpyny/MLOps-nlp-manifesto" target="_blank">View project</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fairness via Representation Neutralization</h3>
+      <p>
+        Studied fairness-aware classification on the COMPAS dataset and analyzed the trade-off
+        between predictive performance and fairness metrics.
+      </p>
+      <p>
+        <a href="https://github.com/sarakpyny/fairness-via-representation-neutralization" target="_blank">View project</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Party Influence in French Electoral Manifestos</h3>
+      <p>
+        Analyzed French electoral manifestos using NLP, topic modeling, and regression to study
+        the drivers of political discourse.
+      </p>
+      <p>
+        <a href="https://github.com/sarakpyny/french-political-text-analysis" target="_blank">View project</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
