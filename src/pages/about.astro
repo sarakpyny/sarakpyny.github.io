@@ -2,25 +2,97 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="About | Sarakpy NY">
-  <h1>About</h1>
+<BaseLayout title="About | Sarakpy Ny">
+  <section class="page">
+    <h1>About</h1>
 
-  <p>
-    I am a Data Science, Statistics, and Machine Learning student at ENSAE Paris,
-    with an academic background spanning applied mathematics, statistics, and machine learning.
-    Before joining ENSAE, I studied at the Institute of Technology of Cambodia, where I developed
-    a strong foundation in mathematics and statistical thinking.
-  </p>
+    <div class="content">
+      <p>
+        I am a Master's student in Data Science, Statistics, and Machine
+        Learning at
+        <a
+          href="https://www.ensae.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ENSAE Paris,
+        </a>
+        <a
+          href="https://www.ip-paris.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Institut Polytechnique de Paris
+        </a>. Before that, I studied applied mathematics and statistics at the
+        <a href="https://itc.edu.kh/" target="_blank" rel="noopener noreferrer">
+          Institute of Technology of Cambodia
+        </a>.
+      </p>
 
-  <p>
-    My experience includes both applied and research-oriented work across recommendation systems,
-    energy performance prediction, financial data analysis, sequence modeling, fairness in machine learning,
-    natural language processing, and scientific machine learning.
-  </p>
+      <p>
+        My work has combined applied data science and research-oriented machine
+        learning. Through internships and academic projects, I have worked on
+        recommendation systems, energy performance prediction, financial data
+        analysis, sequence models, fairness in machine learning, natural
+        language processing, and scientific machine learning.
+      </p>
 
-  <p>
-    I am especially interested in scientific machine learning, AI, and deep learning, and I want
-    to continue building toward research at the intersection of machine learning, statistical modeling,
-    and real-world systems.
-  </p>
+      <p>
+        I am currently doing an internship at
+        <a
+          href="https://www.imt-atlantique.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          IMT Atlantique
+        </a>
+        in collaboration with
+        <a
+          href="https://www.inria.fr/en/odyssey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          INRIA Odyssey,
+        </a> where I work on active learning methods for the correction of numerical
+        models.
+      </p>
+
+      <p>
+        More broadly, I am interested in machine learning, statistical learning,
+        and scientific modeling, especially in settings where theory,
+        computation, and real-world applications meet.
+      </p>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .page {
+    max-width: 760px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.2rem;
+    font-weight: 600;
+  }
+
+  .content p {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #374151;
+  }
+
+  .content a {
+    color: #1f4b5c;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .content a:hover {
+    text-decoration: underline;
+  }
+</style>

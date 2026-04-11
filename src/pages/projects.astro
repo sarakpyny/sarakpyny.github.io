@@ -3,59 +3,220 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Projects | Sarakpy NY">
-  <h1>Projects</h1>
-  <p class="muted">
-    Selected projects in machine learning, statistics, data analysis, and research-oriented work.
-  </p>
-
-  <div class="card">
-    <h2>Manifesto ML System Deployment</h2>
-    <p>
-      Built and deployed a reproducible machine learning system with modular training pipelines.
-      The project combined experiment tracking, API serving, Docker containerization, CI/CD,
-      and Kubernetes-based deployment.
+  <section class="page">
+    <h1>Projects</h1>
+    <p class="intro">
+      Selected work in machine learning, statistics, data analysis, and
+      research-oriented modeling.
     </p>
-    <p><strong>Tools:</strong> Python, FastAPI, MLflow, Docker, GitHub Actions, Kubernetes, ArgoCD</p>
-    <p><a href="https://github.com/sarakpyny/MLOps-nlp-manifesto" target="_blank">View project</a></p>
-  </div>
 
-  <div class="card">
-    <h2>Fairness via Representation Neutralization</h2>
-    <p>
-      Studied fairness-aware classification using Representation Neutralization on the COMPAS dataset,
-      with a focus on the trade-off between predictive performance and fairness metrics.
-    </p>
-    <p><strong>Tools:</strong> Python, fairness metrics, representation learning</p>
-    <p><a href="https://github.com/sarakpyny/fairness-via-representation-neutralization" target="_blank">View project</a></p>
-  </div>
+    <div class="project-list">
+      <article class="project-card">
+        <p class="project-tag">MLOps · Deployment · 2026</p>
+        <h2>ML System Deployment</h2>
+        <p>
+          Built and deployed a reproducible machine learning system with modular
+          training pipelines, experiment tracking, API serving, containerized
+          deployment, and CI/CD workflows.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Python, FastAPI, MLflow, Docker, GitHub Actions,
+          Kubernetes, ArgoCD
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/sarakpyny/MLOps-nlp-manifesto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
 
-  <div class="card">
-    <h2>Party Influence in French Electoral Manifestos</h2>
-    <p>
-      Analyzed French electoral manifestos to study whether political discourse is shaped more strongly
-      by party ideology or by candidates’ socio-professional characteristics.
-    </p>
-    <p><strong>Tools:</strong> Python, NLP, topic modeling, regression</p>
-    <p><a href="https://github.com/sarakpyny/french-political-text-analysis" target="_blank">View project</a></p>
-  </div>
+      <article class="project-card">
+        <p class="project-tag">NLP · Topic Modeling · Regression · 2026</p>
+        <h2>Party Influence in French Electoral Manifestos</h2>
+        <p>
+          Analyzed French electoral manifestos to examine whether political
+          discourse is more strongly associated with party ideology or with
+          candidates’ socio-professional characteristics.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Python, NLP, topic modeling, regression
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/sarakpyny/french-political-text-analysis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
 
-  <div class="card">
-    <h2>Applied Mathematics Research Project</h2>
-    <p>
-      Studied couplings of probability distributions with high probability of equality in a research-oriented
-      mathematics project.
-    </p>
-    <p><strong>Tools:</strong> Probability, Monte Carlo methods</p>
-    <p><a href="https://github.com/pieropls/MCProj-Coupling" target="_blank">View project</a></p>
-  </div>
+      <article class="project-card">
+        <p class="project-tag">
+          Fairness in ML · Representation Learning · 2025
+        </p>
+        <h2>Fairness via Representation Neutralization</h2>
+        <p>
+          Explored fairness-aware classification with Representation
+          Neutralization on the COMPAS dataset, focusing on the trade-off
+          between predictive performance and fairness metrics.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Python, fairness metrics, representation learning
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/sarakpyny/fairness-via-representation-neutralization"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
 
-  <div class="card">
-    <h2>IMDb Data Analysis and Movie Recommendation System</h2>
-    <p>
-      Developed a movie recommendation system and performed exploratory analysis on IMDb data to understand
-      patterns in user preferences and movie characteristics.
-    </p>
-    <p><strong>Tools:</strong> Python, data analysis, recommendation systems, visualization</p>
-    <p><a href="https://github.com/deph-s/IMDb_Data_Analysis_and_Movie_Recommendation_System" target="_blank">View project</a></p>
-  </div>
+      <article class="project-card">
+        <p class="project-tag">Machine Learning · Regression · 2025</p>
+        <h2>IP Paris Hackathon 6</h2>
+        <p>
+          Developed a regression pipeline to predict students' MathScore using
+          preprocessing, feature engineering, and model comparison on structured
+          training data.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Python, machine learning, XGBoost
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/sarakpyny/Hickathon6-IPParis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-tag">Probability · Monte Carlo · 2025</p>
+        <h2>Probabilistic Couplings</h2>
+        <p>
+          Investigated couplings of probability distributions with high
+          probability of equality, combining probabilistic reasoning with Monte
+          Carlo methods in a research-oriented setting.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Probability, Monte Carlo methods
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/pieropls/MCProj-Coupling"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
+
+      <article class="project-card">
+        <p class="project-tag">Data Analysis · Recommendation · 2024</p>
+        <h2>IMDb Data Analysis and Movie Recommendation System</h2>
+        <p>
+          Developed a movie recommendation system and carried out exploratory
+          analysis on IMDb data to study movie characteristics, user
+          preferences, and recommendation patterns.
+        </p>
+        <p class="tools">
+          <strong>Tools:</strong> Python, data analysis, recommendation systems, visualization
+        </p>
+        <p class="project-link">
+          <a
+            href="https://github.com/deph-s/IMDb_Data_Analysis_and_Movie_Recommendation_System"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project
+          </a>
+        </p>
+      </article>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .page {
+    max-width: 820px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+  }
+
+  .intro {
+    margin: 0 0 1.8rem;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .project-list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .project-card {
+    padding: 1.2rem 0 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .project-tag {
+    margin: 0 0 0.3rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6b7280;
+  }
+
+  .project-card h2 {
+    margin: 0 0 0.45rem;
+    font-size: 1.08rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  .project-card p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.75;
+    font-size: 0.98rem;
+  }
+
+  .tools {
+    margin-top: 0.55rem;
+  }
+
+  .project-link {
+    margin-top: 0.55rem !important;
+  }
+
+  .project-link a {
+    color: #1f4b5c;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .project-link a:hover {
+    text-decoration: underline;
+  }
+</style>

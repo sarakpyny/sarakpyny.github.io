@@ -2,15 +2,89 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Contact | Sarakpy NY">
-  <h1>Contact</h1>
-  <p class="muted">
-    I am open to research, academic, and professional opportunities.
-  </p>
+<BaseLayout title="Contact | Sarakpy Ny">
+  <section class="page">
+    <h1>Contact</h1>
+    <!-- <p class="intro">
+      I am open to research, academic, and professional opportunities.
+    </p> -->
 
-  <div class="card">
-    <p><strong>Email:</strong> <a href="mailto:sarakpy.ny@ensae.fr">sarakpy.ny@ensae.fr</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/sarakpyny" target="_blank">github.com/sarakpyny</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sarakpyny" target="_blank">linkedin.com/in/sarakpyny</a></p>
-  </div>
+    <div class="contact-list">
+      <p>
+        <strong>Email</strong><br />
+        <a href="mailto:sarakpy.ny@ensae.fr">sarakpy.ny@ensae.fr</a>
+      </p>
+
+      <p>
+        <strong>GitHub</strong><br />
+        <a
+          href="https://github.com/sarakpyny"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/sarakpyny
+        </a>
+      </p>
+
+      <p>
+        <strong>LinkedIn</strong><br />
+        <a
+          href="https://www.linkedin.com/in/sarakpyny/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin.com/in/sarakpyny
+        </a>
+      </p>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .page {
+    max-width: 760px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+  }
+
+  .intro {
+    margin: 0 0 1.6rem;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .contact-list {
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .contact-list p {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    line-height: 1.75;
+    font-size: 0.98rem;
+  }
+
+  .contact-list strong {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .contact-list a {
+    color: #1f4b5c;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .contact-list a:hover {
+    text-decoration: underline;
+  }
+</style>
