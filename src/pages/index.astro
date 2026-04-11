@@ -86,6 +86,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           >
             GitHub
           </a>
+          <a href="/files/cv.pdf" target="_blank" rel="noopener noreferrer">
+            CV
+          </a>
           <a
             href="https://www.linkedin.com/in/sarakpyny/"
             target="_blank"
@@ -233,7 +236,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-size: 0.78rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--text);
   }
 
   h1 {
@@ -247,29 +250,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .subtitle {
     font-size: 1.05rem;
     line-height: 1.55;
-    color: #1f4b5c;
+    color: var(--text);
     margin: 0 0 0.8rem;
     max-width: none;
   }
 
   .subtitle a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }
 
   .subtitle a:hover {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: underline;
   }
   .lead a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }
 
   .lead a:hover {
-    color: #1f4b5c;
+    color: var(--accent-dark);
     text-decoration: underline;
   }
 
@@ -280,7 +283,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .lead p {
     font-size: 1rem;
     line-height: 1.8;
-    color: #374151;
+    color: var(--text);
     margin: 0 0 0.95rem;
   }
 
@@ -313,7 +316,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   .text-link {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }
@@ -340,8 +343,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     width: 100%;
     max-width: 190px;
     padding: 0.1rem;
-    background: #ffffff;
-    border: 1px solid #dfe3e8;
+    background: var(--card);
+    border: 1px solid var(--line);
     border-radius: 12px;
   }
 
@@ -369,14 +372,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   .profile-links a {
-    color: #4b5563;
+    color: var(--text);
     text-decoration: none;
     font-size: 0.92rem;
     font-weight: 500;
   }
 
   .profile-links a:hover {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: underline;
   }
 
@@ -396,7 +399,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .section-block {
     padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--line);
   }
 
   .section h2 {
@@ -428,11 +431,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .academic-item {
     padding: 1.1rem 0 1.2rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--line);
   }
 
   .academic-item:last-child {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--line);
   }
 
   .academic-item h3 {
@@ -445,37 +448,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .academic-item .meta {
     margin: 0 0 0.55rem;
     font-size: 0.92rem;
-    color: #6b7280;
+    color: var(--text);
   }
 
   .academic-item .meta a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }
 
   .academic-item .meta a:hover {
-    color: #1f4b5c;
+    color: var(--accent-dark);
     text-decoration: underline;
   }
 
   .academic-item p:last-child {
     margin: 0;
     line-height: 1.75;
-    color: #374151;
+    color: var(--text);
   }
 
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--line);
   }
 
   .project-card {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--line);
     border-radius: 0;
     padding: 1.15rem 0 1.2rem;
     min-height: unset;
@@ -486,7 +489,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .project-card:hover {
     transform: none;
     box-shadow: none;
-    border-color: #e5e7eb;
+    border-color: var(--line);
   }
 
   .project-tag {
@@ -494,7 +497,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-size: 0.8rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--text);
   }
 
   .project-card h3 {
@@ -504,20 +507,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   .project-card h3 a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: inherit;
   }
 
   .project-card h3 a:hover {
-    color: #1f4b5c;
+    color: var(--accent-dark);
     text-decoration: underline;
   }
 
   .project-card p:last-child {
     margin: 0;
     max-width: 75ch;
-    color: #374151;
+    color: var(--text);
     line-height: 1.75;
     font-size: 0.98rem;
   }
@@ -525,7 +528,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .project-card > p:not(.project-tag):not(.project-links) {
     margin: 0;
     max-width: 75ch;
-    color: #374151;
+    color: var(--text);
     line-height: 1.75;
     font-size: 0.98rem;
   }
@@ -535,14 +538,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   .project-links a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-size: 0.92rem;
     font-weight: 500;
   }
 
   .project-links a:hover {
-    color: #1f4b5c;
+    color: var(--accent-dark);
     text-decoration: underline;
   }
 

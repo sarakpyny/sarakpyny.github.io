@@ -68,7 +68,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <style>
   .page {
-    max-width: 760px;
+    max-width: none;
   }
 
   h1 {
@@ -83,11 +83,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 0 0 1rem;
     font-size: 1rem;
     line-height: 1.8;
-    color: #374151;
+    color: var(--text);
   }
 
   .content a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }

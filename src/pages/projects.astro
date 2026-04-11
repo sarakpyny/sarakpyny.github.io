@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Projects | Sarakpy NY">
+<BaseLayout title="Projects | Sarakpy Ny">
   <section class="page">
     <h1>Projects</h1>
     <p class="intro">
@@ -164,7 +164,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .intro {
     margin: 0 0 1.8rem;
-    color: #6b7280;
+    color: var(--text);
     font-size: 1rem;
     line-height: 1.7;
   }
@@ -172,12 +172,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .project-list {
     display: grid;
     gap: 0;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--line);
   }
 
   .project-card {
     padding: 1.2rem 0 1.25rem;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--line);
   }
 
   .project-tag {
@@ -185,7 +185,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     font-size: 0.8rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #6b7280;
+    color: var(--text);
   }
 
   .project-card h2 {
@@ -197,7 +197,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   .project-card p {
     margin: 0;
-    color: #374151;
+    color: var(--text);
     line-height: 1.75;
     font-size: 0.98rem;
   }
@@ -207,11 +207,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
 
   .project-link {
-    margin-top: 0.55rem !important;
+    margin-top: 0.55rem;
   }
 
   .project-link a {
-    color: #1f4b5c;
+    color: var(--accent);
     text-decoration: none;
     font-weight: 500;
   }
