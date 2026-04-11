@@ -207,7 +207,7 @@ const { title = "Sarakpy NY" } = Astro.props;
         box-shadow: var(--shadow-soft);
       }
 
-      footer {
+      .site-footer {
         border-top: 1px solid var(--line);
         padding: 1.5rem 0 2.5rem;
         color: var(--muted);
@@ -216,10 +216,39 @@ const { title = "Sarakpy NY" } = Astro.props;
 
       .footer-inner {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        gap: 1rem;
+        justify-content: flex-start;
+      }
+
+      .footer-inline {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
         flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .footer-inline a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .footer-inline a:hover {
+        color: #374151;
+      }
+
+      .footer-inline img {
+        width: 15px;
+        height: 15px;
+        display: block;
+      }
+
+      .footer-note {
+        margin-left: 0.15rem;
       }
 
       img {
@@ -266,9 +295,31 @@ const { title = "Sarakpy NY" } = Astro.props;
       <slot />
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© 2026 Sarakpy NY</div>
+        <div class="footer-inline">
+          <span>© 2026 Sarakpy NY</span>
+
+          <a
+            href="https://github.com/sarakpyny"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img src="/icons/github.svg" alt="GitHub" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sarakpyny/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+
+          <!-- <span class="footer-note">All rights reserved.</span> -->
+        </div>
       </div>
     </footer>
   </body>
