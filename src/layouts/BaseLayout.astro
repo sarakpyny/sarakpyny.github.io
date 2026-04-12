@@ -1,7 +1,11 @@
 ---
 import Chatbot from "../components/Chatbot.astro";
 
-const { title = "Sarakpy Ny" } = Astro.props;
+const {
+  title = "Sarakpy Ny | Data Science, Statistics, Machine Learning",
+  description = "Official website of Sarakpy Ny, MSc student in Data Science, Statistics, and Machine Learning at ENSAE Paris and Institut Polytechnique de Paris. Projects, CV, and contact.",
+  canonical = "https://sarakpyny.github.io/",
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -9,6 +13,59 @@ const { title = "Sarakpy Ny" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#fcfcfd" />
+    <meta
+      name="google-site-verification"
+      content="S7kcFz3NnDmOiy7n04q9_nqgWLRUCAg4hw9wGL0Vex4"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content="https://sarakpyny.github.io/images/ny-profile.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://sarakpyny.github.io/images/ny-profile.jpg"
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Sarakpy Ny",
+        url: canonical,
+        image: "https://sarakpyny.github.io/images/ny-profile.jpg",
+        jobTitle:
+          "MSc student in Data Science, Statistics, and Machine Learning",
+        alumniOf: [
+          {
+            "@type": "CollegeOrUniversity",
+            name: "ENSAE Paris",
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            name: "Institut Polytechnique de Paris",
+          },
+        ],
+        sameAs: [
+          "https://github.com/sarakpyny",
+          "https://www.linkedin.com/in/sarakpyny/",
+        ],
+      })}
+    />
 
     <script is:inline>
       const savedTheme = localStorage.getItem("theme");
@@ -377,7 +434,7 @@ const { title = "Sarakpy Ny" } = Astro.props;
   <body>
     <header>
       <div class="container nav">
-        <a href="/" class="nav-name">N. Sarakpy</a>
+        <a href="/" class="nav-name">Sarakpy Ny</a>
 
         <div class="nav-right">
           <nav class="nav-links">
@@ -441,6 +498,7 @@ const { title = "Sarakpy Ny" } = Astro.props;
         localStorage.setItem("theme", nextTheme);
       });
     </script>
+
     <Chatbot />
   </body>
 </html>
