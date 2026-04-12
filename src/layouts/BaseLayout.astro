@@ -1,4 +1,6 @@
 ---
+import Chatbot from "../components/Chatbot.astro";
+
 const { title = "Sarakpy Ny" } = Astro.props;
 ---
 
@@ -439,5 +441,6 @@ const { title = "Sarakpy Ny" } = Astro.props;
         localStorage.setItem("theme", nextTheme);
       });
     </script>
+    <Chatbot />
   </body>
 </html>
